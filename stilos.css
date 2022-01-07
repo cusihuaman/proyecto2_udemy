@@ -6,6 +6,14 @@
     --blaco:#fff;
     --negro:#000;
 }
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+/*  */
+*, *:after, *:before{
+    box-sizing: inherit;
+}
 body{
     font-family: 'Krub', sans-serif;
 }
