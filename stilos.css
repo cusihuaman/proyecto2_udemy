@@ -15,7 +15,213 @@ html{
     box-sizing: inherit;
 }
 body{
+    background-color: var(--primario);
     font-family: 'Krub', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
+}
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blaco);
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.contenedor{
+    max-width: 120rem;
+    margin:0 auto;
+}
+h1,h2,h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+h1{
+    font-size: 4rem;
+    color: var(--secundario);
+}
+h2{
+    font-size: 3.2rem;
+    color: var(--secundario);
+}
+h3{
+    font-size: 2.4rem;
+    color: var(--secundario);
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__logo{
+    margin: 3rem 0;
+}
+/* navegacion */
+.navegacion{
+    background-color: var(--primario-oscuro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+.navegacion_enlace{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 2rem;
+}
+.navegacion_enlace--activo,
+.navegacion_enlace:hover{
+    color: var(--secundario);
+}
+
+/* fooder */
+.fooder{
+    background-color: var(--primario-oscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.fooder__text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+/* grid */
+.grid{
+    display: grid;
+    gap: 2rem;
+}
+@media (min-width: 768px ) {
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+        }
+}
+/* productos */
+.producto{
+    background-color: var(--primario-oscuro);
+    padding: 1rem;
+}
+.producto-img{
+   /*  width: 100%; */
+}
+.producto-info{
+
+}
+.producto-name{
+    font-size: 4rem;
+}
+.producto-price{
+    font-size: 2.8rem;
+    color: var(--secundario);
+}
+.producto-name,
+.producto-price{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem 0;
+    text-align: center;
+}
+.grafico{
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/3;
+}
+.grafico--camisas{
+    grid-row: 2/3;
+    background-image: url(img/grafico1.jpg);
+}
+.grafico--nodes{
+    background-image: url(img/grafico2.jpg);
+    grid-row: 8/9;
+}
+@media (min-width: 768px ) {
+    .grafico--nodes{
+        grid-row: 5/6;
+        grid-column: 2/4;
+    }
+}
+/* nosotros */
+.nosotros{
+    display: grid;
+    grid-template-rows:repeat(2,auto) ;
+}
+/* Nosotros */
+@media (min-width: 768px ){
+    .nosotros{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+.nosotros--contenido{
+
+}
+.nosotros-img{
+    grid-row:1/2 ;
+/*     width: 100%; */
+}
+@media (min-width: 768px ){
+    .nosotros-img{
+        grid-column: 2/3;
+    }
+}
+.bloques{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px ){
+    .bloques{
+        grid-template-columns:repeat(4,1fr);
+    }
+}
+
+.bloque{
+    text-align: center;
+}
+.bloque__imagen{
+    width: 100%;
+}
+.bloque-titulo{
+    margin: 0;
+}
+/* pagina del producto */
+@media (min-width: 768px ){
+    .camisa{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.formulario__campo{
+    border: 1rem solid var(--primario-oscuro);
+    background-color: transparent;
+    color: var(--negro);
+    font-size: 2rem;
+    padding: 1rem;
+    appearance: none;
+}
+.formulario__submit{
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2rem;
+    border-radius: .5rem;
+    transition: background-color .3s ease;
+    grid-column: 1/3;
+}
+.formulario__submit:hover{
+    cursor: pointer;
+    background-color: var(--secundario-oscuro);
+}
+.camisa{
+    max-width: 90%;
+    margin: 0 auto;
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto-Store-cusco</title>
+    <!--  -->
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stilos.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="logotipo">
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion_enlace" href="index.html">Tienda</a>
+        <a class="navegacion_enlace navegacion_enlace--activo" href="nosotros.html">Nosotros</a>
+    </nav>
+    <main class="contenedor">
+        <h1>React.js</h1>
+        <div class="camisa">
+            <img class="camisa-img" src="img/3.jpg" alt="">
+            <div class="camisa__contenido">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ipsam rerum 
+                    architecto quidem, totam quam ullam iste debitis dolor numquam eius illo nisi,
+                     exercitationem fugit pariatur minima.
+                </p>
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option value="" disabled selected>--selecionar-talla--</option>
+                        <option value="">pequeña</option>
+                        <option value="">mediana</option>
+                        <option value="">Grande</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- fooder -->
+    <footer class="fooder">
+        <p class="fooder__text">Front End-Todo los derechos recervados</p>
+    </footer>
+</body>
+</html>
